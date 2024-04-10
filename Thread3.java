@@ -18,12 +18,9 @@ public class Thread3 implements Runnable {
                     break;
                 }
             }
-            if (isPrime) {
-                System.out.println("ID: " + student.id + ", Ten: " + student.name + ", Dia chi: " + student.address + ", Tuoi: " + student.age + ", Tong ngay thang nam " + student.sum + " la so nguyen to");
-            } else {
-                System.out.println("ID: " + student.id + ", Ten: " + student.name + ", Dia chi: " + student.address + ", Tuoi: " + student.age + ", Tong ngay thang nam " + student.sum + " khong la so nguyen to");
-            }
         }
     }
 }
+
+
 
