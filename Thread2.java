@@ -33,13 +33,7 @@ public class Thread2 implements Runnable {
             byte[] encodedAge = md.digest(Integer.toString(age).getBytes());
 
             student.age = age;
-            student.isDigit = true;
-            for (byte b : encodedAge) {
-                if (b < 0) {
-                    student.isDigit = false;
-                    break;
-                }
-            }
+            
             student.sum = 0;
             String dobStr = student.dateOfBirth.substring(0, 4);
             for (char c : dobStr.toCharArray()) {
