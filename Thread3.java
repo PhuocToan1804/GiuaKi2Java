@@ -11,16 +11,14 @@ public class Thread3 implements Runnable {
 
     public void run() {
         for (Student student : students) {
-            boolean isPrime = true;
+            student.setDigit(true);
             for (int i = 2; i <= Math.sqrt(student.sum); i++) {
                 if (student.sum % i == 0) {
-                    isPrime = false;
+                    student.setDigit(false);
                     break;
                 }
             }
         }
     }
 }
-
-
 
