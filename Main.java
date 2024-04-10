@@ -69,7 +69,6 @@ public class Main {
                 int sum = Integer.parseInt(studentElement.getElementsByTagName("sum").item(0).getTextContent());
                 boolean isDigit = Boolean.parseBoolean(studentElement.getElementsByTagName("isDigit").item(0).getTextContent());
 
-                // In kết quả giải mã
                 System.out.println("ID: " + id + ", Name: " + name + ", Address: " + address + ", Age: " + age + ", Sum: " + sum + ", Is Digit: " + isDigit);
             }
         } catch (Exception e) {
@@ -77,5 +76,4 @@ public class Main {
         }
     }
 }
-
 
